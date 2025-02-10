@@ -31,8 +31,8 @@
 </head>
 
 <body class="font-sora">
-    <header class="mx-36 py-6 text-xl sm:px-4 bg-stone-200	">
-       <nav class="flex justify-between items-center">
+    <header class="px-36 bg-[#EFEBE3]">
+       <nav class="flex justify-between items-center pt-3">
         <div>
             <img src="c2-assets/logo-header.png" alt="">
         </div>
@@ -91,9 +91,10 @@
             <h1 class="text-[#179800] font-semibold text-4xl mb-12">Service</h1>
             <div class="grid grid-cols-3">
                 <div class="card bg-[#EFEBE3] w-[424px] rounded-2xl">
-                    <figure class="px-10 pt-10">
-                      <img
-                        src="c2-assets/service.png">
+                    <figure class="px-10 pt-10 ">
+                      <div class="p-6 bg-white rounded-[100%]">
+                        <img src="c2-assets/service.png">
+                      </div>
                     </figure>
                     <div class="card-body items-center text-center">
                       <h2 class="card-title font-semibold text-2xl">24/7 Services </h2>
@@ -103,8 +104,9 @@
 
                   <div class="card bg-[#EFEBE3] w-[424px] rounded-2xl">
                     <figure class="px-10 pt-10">
-                      <img
-                        src="c2-assets/delivery.png">
+                      <div class="p-6 bg-white rounded-[100%]">
+                        <img src="c2-assets/delivery.png">
+                      </div>
                     </figure>
                     <div class="card-body items-center text-center">
                       <h2 class="card-title font-semibold text-2xl">Fast Delivery</h2>
@@ -114,8 +116,9 @@
 
                   <div class="card bg-[#EFEBE3] w-[424px] rounded-2xl">
                     <figure class="px-10 pt-10">
-                      <img
-                        src="c2-assets/healthy.png">
+                      <div class="p-6 bg-white rounded-[100%]">
+                        <img src="c2-assets/healthy.png">
+                      </div>
                     </figure>
                     <div class="card-body items-center text-center">
                       <h2 class="card-title font-semibold text-2xl">Healthy Products</h2>
@@ -131,10 +134,10 @@
           <h1 class="text-[#179800] font-semibold text-4xl pb-12">Popular Products</h1>
 
           <div class="flex space-x-6">
-            <div class="border-2 border-red-950 w-[424px] px-8 pt-12 rounded-xl bg-[#F9DF8A]">
+            <div class="bg-gradient-to-br from-[#53DB3A] to-[#FFFFFF] pl-8 pt-12 rounded-xl">
               <h1 class="text-3xl text-white pb-5">30% off</h1>
               <p class="pb-5">Discover a world of treats,toys,and <br>essential handpickd for</p>
-              <button class="btn text-xl px-7 py-2">Buy Now</button>
+              <button class="btn text-xl px-7 py-2 bg-white">Buy Now</button>
               <img src="c2-assets/vegetable-offer.png" class="bg-right-bottom pl-[90px] mt-[-60px]">
             </div>
 
@@ -255,23 +258,76 @@
 
         <!-- offers section -->
 
-        <section class="px-36 pt-36 mb-11 text-xl text-white">
+        <section class="px-36 pt-36 mb-[389px] text-xl text-white">
 
-          <h1 class="text-[#179800] font-semibold text-4xl pb-12">Popular Products</h1>
-            <div class="flex">
-              <div class="bg-[#115414] rounded-3xl px-10 pt-12 w-[60%]">
+          <h1 class="text-[#179800] font-semibold text-4xl pb-12">Arrival & Offers</h1>
+            <div class="flex gap-5">
+
+              <!-- card 1 -->
+              <div class="bg-[#115414] rounded-3xl px-10 pt-12 w-[58%] flex justify-between">
+                <div>
                   <img src="c2-assets/dawat-logo.png" alt="">
                   <button class="bg-[#63B76D] py-4 px-10 rounded-xl mt-8 mb-6">Cook Exotic Dishes</button>
                   <p class="text-4xl pb-12">UP to <span>20% OFF</span></p>
+                </div> 
+                    <img src="c2-assets/dawat-mock-up.png" alt="">
               </div>
-              <div>
-                <img src="c2-assets/dawat-mock-up.png" alt="">
+
+              <!-- card 2 -->
+
+              <div class="bg-[#102861] rounded-3xl px-10 pt-12 w-[40%] flex justify-between">
+                <div>
+                  <img src="c2-assets/india-gate-logo.png" alt="">
+                  <button class="bg-[#2A4D97] py-4 px-10 rounded-xl mt-8 mb-6">World’s No.1 Rice</button>
+                  <p class="text-4xl pb-12">UP to <span>40% OFF</span></p>
+                </div> 
+                    <img src="c2-assets/india-gate-mock-up.png" alt="">
               </div>
+          
+              
             </div>
         </section>
     </main>
 
-    <footer>
+    <footer class="bg-[#179800] px-36">
+        <div class="flex bg-[#EFEBE3] gap-[129px] py-14 pl-[102px] rounded-3xl relative top-[-220px]">
+          <img src="c2-assets/vegetable-busket.png" alt="">
+
+          <div>
+            <h2 class="text-[#179800] font-semibold text-4xl pb-5">Arrival & Offers</h2>
+            <p class="text-xl pb-9">Exclusive training tips, ticks, product deals and more.</p>
+            <input class="py-5 pl-5 pr-[290px] rounded-lg mb-9" type="email" placeholder="Enter email...."><br>
+            <button class="px-8 py-3 bg-[#179800]  rounded-lg text-[#ffffff] text-xl">Subscribe</button>
+          </div>
+        </div>
+
+        <div class="flex justify-between pb-32">
+          <div>
+            <img src="c2-assets/logo-footer.png" alt="">
+            <p class="text-xl pt-3 text-[#e4ddd0]">Discover a world of treats, toys, and <br>
+              essentials handpicked for your furry <br>
+              friends</p>
+          </div>
+
+          <div class="text-xl text-[#EFEBE3]">
+            <ul>
+              <li><a href="">Product</a></li>
+              <li class="pt-8 pb-8"><a href="">Sercive</a></li>
+              <li><a href="">Contact us</a></li>
+            </ul>
+          </div>
+
+          <div >
+            <h1 class=" text-[#EFEBE3]">Follow us</h1>
+            <div class="space-x-8 text-[#EFEBE3] mt-3">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+
 
     </footer>
 </body>
