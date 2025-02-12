@@ -22,23 +22,19 @@
             font-family: "Sora", serif;
         }
 
-        /* .bg{
-            background: linear-gradient(180.00deg, rgb(255, 255, 255),rgb(239, 235, 227) 100%);
-        } */
-
-        /* class="bg-gradient-to-l from-[#ffffff] to-[#ff0000]" */
     </style>
 </head>
 
 <body class="font-sora">
 
-    <!-- <header class="px-36 bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3]">
+    <header class="lg:px-36 px-8 bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3]">
        <nav class="flex justify-between items-center pt-3 ">
         <div>
-            <img src="c2-assets/logo-header.png" alt="">
+            <img class="hidden lg:inline" src="c2-assets/logo-header.png" alt="">
+            <img class="lg:hidden" src="c2-assets/logo-footer.png" alt="">
         </div>
 
-        <div>
+        <div class="hidden lg:inline">
             <ul>
                 <li class="space-x-4">
                     <a href="">Product</a>
@@ -48,87 +44,51 @@
             </ul>
         </div>
 
+      <div class="hidden lg:inline">
         <div class="flex items-center space-x-3">
-            <div class="flex space-x-6 pr-6">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-                  </svg>                  
-            
-            
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-                  </svg>                  
-            </div>
-            <button class="px-8 py-3 rounded-lg border-2 border-green-700 text-xl">Login</button>
-            <button class="px-8 py-3 bg-[#179800]  rounded-lg text-[#ffffff]">Register</button>
-        </div>
+          <div class="flex space-x-6 pr-6 ">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                </svg>                  
+          
+          
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                </svg>                  
+          </div>
+          <button class="px-8 py-3 rounded-lg border-2 border-green-700 text-xl hidden lg:inline">Login</button>
+          <button class="px-8 py-3 bg-[#179800]  rounded-lg text-[#ffffff] hidden lg:inline">Register</button>
+      </div>
+      </div>
 
-        hamberger menu 
+        <!-- hamberger menu  -->
 
-        <div class="lg:hidden my-1 mx-0">
-            <div class="w-10 h-1 bg-[#000000]"></div>
-            <div class="w-10 h-1 bg-[#000000]"></div>
-            <div class="w-10 h-1 bg-[#000000]"></div>
+        <div class="lg:hidden">
+            <div class="w-10 h-1 bg-[#179800] mt-1"></div>
+            <div class="w-10 h-1 bg-[#179800] mt-1"></div>
+            <div class="w-10 h-1 bg-[#179800] mt-1"></div>
         </div> 
-
-
-        <div class="navbar bg-base-100 lg:hidden">
-          <div class="flex-none">
-            <button class="btn btn-square btn-ghost">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                class="inline-block h-5 w-5 stroke-current">
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h16M4 18h16"></path>
-              </svg>
-            </button>
-          </div>
-          <div class="flex-1">
-            <a class="btn btn-ghost text-xl">daisyUI</a>
-          </div>
-          <div class="flex-none">
-            <button class="btn btn-square btn-ghost">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                class="inline-block h-5 w-5 stroke-current">
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"></path>
-              </svg>
-            </button>
-          </div>
-        </div>
-
 
        </nav>
 
-        start banner section --
+        <!-- start banner section  -->
 
        <div class="mt-20 flex flex-col text-center">
-        <h1 class="text-5xl font-semibold mb-8">Freshness <span class="text-[#179800]">You Can <br>
+        <h1 class="lg:text-5xl text-3xl font-semibold mb-8">Freshness <span class="text-[#179800]">You Can <br>
             Count</span> On, Prices You’ll Love!</h1>
         
-        <p class="text-xl mb-9">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br>staples, we’ve got you covered every day!</p>
+        <p class="lg:text-xl text-base mb-9">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br>staples, we’ve got you covered every day!</p>
 
         <img src="c2-assets/hero-vegetables.png" alt="">
        </div>
-    </header> -->
+    </header>
 
     <main>
 
     <!-- service section -->
         <section class="lg:mx-36 lg:mt-36 lg:mb-36 px-4 mb-12"> 
 
-            <h1 class="text-[#179800] font-semibold lg:text-4xl sm:text-2xl lg:mb-12 mb-8 mt-12">Service</h1>
+            <h1 class="text-[#179800] font-semibold lg:text-4xl text-2xl lg:mb-12 mb-8 mt-12">Service</h1>
             <div class="lg:grid lg:grid-cols-3">
                 <div class="card bg-[#EFEBE3] lg:w-[424px] rounded-2xl w-[100%] mb-5">
                     <figure class="px-10 pt-10 ">
@@ -296,6 +256,42 @@
           </div>
         </section>
 
+        <!-- Explore more section -->
+
+        <section class="lg:px-36 lg:pt-36  px-4 pb-12">
+          <h1 class="text-[#179800] font-semibold lg:text-4xl text-2xl lg:mb-12 mb-8 mt-12">Explore More</h1>
+
+
+          <div class="grid lg:grid-cols-4 grid-cols-2">
+            <div class="lg:h-[350px] h-[250px] lg:w-[300px] w-[180px] text-center mr-3 mb-5">
+              <img class="lg:h-[300px] h-[200px] lg:w-[300px] w-[180px] bg-[#EFEBE3] rounded-[100%] mb-5" src="c2-assets/cauliflower.png" alt="">
+              <p class="text-xl font-bold hover:text-[#179800]">Cauliflower</p>
+            </div>
+
+            <div class="lg:h-[350px] h-[250px] lg:w-[300px] w-[180px] text-center mr-3 mb-5">
+              <img class="lg:h-[300px] h-[200px] lg:w-[300px] w-[180px] bg-[#EFEBE3] rounded-[100%] mb-5" src="c2-assets/eggplant.png" alt="">
+              <p class="text-xl font-bold hover:text-[#179800]">Eggplant</p>
+            </div>
+
+            <div class="lg:h-[350px] h-[250px] lg:w-[300px] w-[180px] text-center mr-3 mb-5">
+              <img class="lg:h-[300px] h-[200px] lg:w-[300px] w-[180px] bg-[#EFEBE3] rounded-[100%] mb-5" src="c2-assets/garlic.png" alt="">
+              <p class="text-xl font-bold hover:text-[#179800]">Garlic</p>
+            </div>
+
+            <div class="lg:h-[350px] h-[250px] lg:w-[300px] w-[180px] text-center mr-3 mb-5">
+              <img class="lg:h-[300px] h-[200px] lg:w-[300px] w-[180px] bg-[#EFEBE3] rounded-[100%] mb-5" src="c2-assets/watermilon.png" alt="">
+              <p class="text-xl font-bold hover:text-[#179800]">Watermilon</p>
+            </div>
+
+            <div class="lg:h-[350px] h-[250px] lg:w-[300px] w-[180px] text-center mr-3 mb-5">
+              <img class="lg:h-[300px] h-[200px] lg:w-[300px] w-[180px] bg-[#EFEBE3] rounded-[100%] mb-5" src="c2-assets/Mango.png" alt="">
+              <p class="text-xl font-bold hover:text-[#179800]">Mango</p>
+            </div>
+               
+          </div>
+
+        </section>
+
         <!-- offers section -->
 
         <section class="lg:px-36 lg:pt-36 lg:mb-[320px] mb-[350px] lg:text-xl text-white px-4 pt-12">
@@ -308,9 +304,9 @@
                 <div>
                   <img src="c2-assets/dawat-logo.png" alt="" class="w-[113px] lg:w-[auto] h-[42px] lg:h[auto]">
                   <button class="bg-[#63B76D] lg:py-4 py-2 lg:px-10 px-4 rounded-xl lg:mt-8 mt-4 lg:mb-6 mb-3 text-xs lg:text-2xl">Cook Exotic Dishes</button>
-                  <p class="lg:text-4xl text-[20px] lg:pb-12 pb-6">UP to <span class="font-bold">20% OFF</span></p>
+                  <p class="lg:text-4xl text-[20px] pb-6">UP to <span class="font-bold">20% OFF</span></p>
                 </div> 
-                    <img src="c2-assets/dawat-mock-up.png" alt="" class="lg:w-[auto] w-[170px] lg:h-[auto] h-[172px] lg:pt-12 pt-6">
+                    <img src="c2-assets/dawat-mock-up.png" alt="" class="lg:w-[auto] w-[170px] lg:h-[300px] h-[172px] lg:pt-12 pt-6">
               </div>
 
               <!-- card 2  -->
@@ -321,121 +317,17 @@
                   <button class="bg-[#2A4D97] lg:py-4 py-2 lg:px-10 px-4 rounded-xl lg:mt-8 mt-1 lg:mb-6 mb-3">World’s No.1 Rice</button>
                   <p class="lg:text-4xl text-[20px] lg:pb-12 pb-6">UP to <span class="font-bold">40% OFF</span></p>
                 </div> 
-                    <img src="c2-assets/india-gate-mock-up.png" alt="" class="lg:h-[auto] h-[165px] lg:w-[auto] w-[110px]">
+                    <img src="c2-assets/india-gate-mock-up.png" alt="" class="lg:h-[300px] h-[165px] lg:w-[auto] w-[110px]">
               </div>
             </div>
         </section> 
 
-        <!-- best sale section -->
-
-         <!-- <section class=" px-36 pt-36 pb-36 bg-[#EFEBE3] mb-72">
-          <h1 class="text-[#179800] font-semibold text-4xl pb-12">Best Selling Product</h1>
-  
-            <div class="grid grid-cols-3 gap-4">
-              <div class="h-40 w-[400px] bg-white py-4 pl-4 pr-9 rounded-xl flex space-x-4 items-center">
-                <div class="w-28 h-28 p-2 bg-[#EFEBE3] rounded-xl">
-                  <img src="c2-assets/carrot.png" alt="">
-                </div>
-  
-                <div>
-                  <h1><i class="fa-solid fa-star pr-2 text-[#FFC107]"></i>5</h1>
-                  <h2 class="text-2xl font-medium">Carrot 1kg</h2>
-                  <p>$9.99</p>
-                </div>
-              </div>
-
-              <div class="h-40 w-[400px] bg-white py-4 pl-4 pr-9 rounded-xl flex space-x-4 items-center">
-                <div class="w-28 h-28 p-2 bg-[#EFEBE3] rounded-xl">
-                  <img src="c2-assets/carrot.png" alt="">
-                </div>
-  
-                <div>
-                  <h1><i class="fa-solid fa-star pr-2 text-[#FFC107]"></i>5</h1>
-                  <h2 class="text-2xl font-medium">Carrot 1kg</h2>
-                  <p>$9.99</p>
-                </div>
-              </div>
-
-              <div class="h-40 w-[400px] bg-white py-4 pl-4 pr-9 rounded-xl flex space-x-4 items-center">
-                <div class="w-28 h-28 p-2 bg-[#EFEBE3] rounded-xl">
-                  <img src="c2-assets/carrot.png" alt="">
-                </div>
-  
-                <div>
-                  <h1><i class="fa-solid fa-star pr-2 text-[#FFC107]"></i>5</h1>
-                  <h2 class="text-2xl font-medium">Carrot 1kg</h2>
-                  <p>$9.99</p>
-                </div>
-              </div>
-
-              <div class="h-40 w-[400px] bg-white py-4 pl-4 pr-9 rounded-xl flex space-x-4 items-center">
-                <div class="w-28 h-28 p-2 bg-[#EFEBE3] rounded-xl">
-                  <img src="c2-assets/carrot.png" alt="">
-                </div>
-  
-                <div>
-                  <h1><i class="fa-solid fa-star pr-2 text-[#FFC107]"></i>5</h1>
-                  <h2 class="text-2xl font-medium">Carrot 1kg</h2>
-                  <p>$9.99</p>
-                </div>
-              </div>
-
-              <div class="h-40 w-[400px] bg-white py-4 pl-4 pr-9 rounded-xl flex space-x-4 items-center">
-                <div class="w-28 h-28 p-2 bg-[#EFEBE3] rounded-xl">
-                  <img src="c2-assets/carrot.png" alt="">
-                </div>
-  
-                <div>
-                  <h1><i class="fa-solid fa-star pr-2 text-[#FFC107]"></i>5</h1>
-                  <h2 class="text-2xl font-medium">Carrot 1kg</h2>
-                  <p>$9.99</p>
-                </div>
-              </div>
-
-              <div class="h-40 w-[400px] bg-white py-4 pl-4 pr-9 rounded-xl flex space-x-4 items-center">
-                <div class="w-28 h-28 p-2 bg-[#EFEBE3] rounded-xl">
-                  <img src="c2-assets/carrot.png" alt="">
-                </div>
-  
-                <div>
-                  <h1><i class="fa-solid fa-star pr-2 text-[#FFC107]"></i>5</h1>
-                  <h2 class="text-2xl font-medium">Carrot 1kg</h2>
-                  <p>$9.99</p>
-                </div>
-              </div>
-
-              <div class="h-40 w-[400px] bg-white py-4 pl-4 pr-9 rounded-xl flex space-x-4 items-center">
-                <div class="w-28 h-28 p-2 bg-[#EFEBE3] rounded-xl">
-                  <img src="c2-assets/carrot.png" alt="">
-                </div>
-  
-                <div>
-                  <h1><i class="fa-solid fa-star pr-2 text-[#FFC107]"></i>5</h1>
-                  <h2 class="text-2xl font-medium">Carrot 1kg</h2>
-                  <p>$9.99</p>
-                </div>
-              </div>
-
-              <div class="h-40 w-[400px] bg-white py-4 pl-4 pr-9 rounded-xl flex space-x-4 items-center">
-                <div class="w-28 h-28 p-2 bg-[#EFEBE3] rounded-xl">
-                  <img src="c2-assets/carrot.png" alt="">
-                </div>
-  
-                <div>
-                  <h1><i class="fa-solid fa-star pr-2 text-[#FFC107]"></i>5</h1>
-                  <h2 class="text-2xl font-medium">Carrot 1kg</h2>
-                  <p>$9.99</p>
-                </div>
-              </div>
-          </div>
-      
-        </section> -->
     </main>
 
     <footer class="bg-[#179800] lg:px-36 px-4 relative">
-        <div class="lg:flex bg-[#EFEBE3] lg:gap-[129px] lg:py-14 pt-8 lg:pl-[102px] rounded-3xl absolute lg:top-[-220px] top-[-320px]">
+        <div class="lg:flex bg-[#EFEBE3] lg:gap-[129px] lg:py-14 pt-8 lg:pl-[102px] rounded-3xl lg:pr-[111px] mr-4 absolute lg:top-[-220px] top-[-320px]">
           <div class="text-center">
-            <img src="c2-assets/vegetable-busket.png" class="lg:pl-[auto] pl-[66px] lg:pr-[auto] pr-[60] lg:mb-0 mb-6 ">
+            <img src="c2-assets/vegetable-busket.png" class="lg:mb-0 mb-6 ">
           </div>
 
           <div class="lg:text-left text-center">
